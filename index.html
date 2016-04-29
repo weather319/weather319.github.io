@@ -19,8 +19,6 @@
     <link rel="alternative" href="/atom.xml" title="All IS ONE" type="application/atom+xml">
   
   
-    <link rel="icon" href="http://7xti8v.com1.z0.glb.clouddn.com/car.jpg">
-  
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -32,7 +30,7 @@
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img lazy-src="null" class="js-avatar">
+			<img lazy-src="http://7xti8v.com1.z0.glb.clouddn.com/avatar" class="js-avatar">
 			
 		</a>
 
@@ -114,7 +112,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/opencv/" style="font-size: 10px;">opencv</a> <a href="/tags/python/" style="font-size: 10px;">python</a>
+						<a href="/tags/numpy/" style="font-size: 10px;">numpy</a> <a href="/tags/opencv/" style="font-size: 10px;">opencv</a> <a href="/tags/python/" style="font-size: 20px;">python</a>
 					</div>
 				</section>
 				
@@ -143,7 +141,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+					<div id="js-aboutme">One Is All</div>
 				</section>
 				
 			</div>
@@ -162,7 +160,7 @@
 		<header id="header" class="inner">
 			<div class="profilepic">
 			
-				<img lazy-src="null" class="js-avatar">
+				<img lazy-src="http://7xti8v.com1.z0.glb.clouddn.com/avatar" class="js-avatar">
 			
 			</div>
 			<hgroup>
@@ -198,6 +196,67 @@
 
       <div class="body-wrap">
   
+    <article id="post-Python-操作numpy-矩阵代替for循环" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/29/Python-操作numpy-矩阵代替for循环/" class="article-date">
+  	<time datetime="2016-04-29T07:56:38.000Z" itemprop="datePublished">2016-04-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/29/Python-操作numpy-矩阵代替for循环/">Python 操作numpy 矩阵代替for循环</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Python-操作numpy-矩阵代替for循环"><a href="#Python-操作numpy-矩阵代替for循环" class="headerlink" title="Python 操作numpy 矩阵代替for循环"></a>Python 操作numpy 矩阵代替for循环</h1><h2 id="具体问题："><a href="#具体问题：" class="headerlink" title="具体问题："></a>具体问题：</h2><blockquote>
+<p>上一篇文章中，使用kmeans聚类后，我得到了一个存放4个中心点颜色值的4<em>3矩阵。为了得到这个矩阵中，颜色残差最大的那个分类的索引，我必须使第三列减去（第一+第二列）的均值。最后找出色差最大的值，并返回索引。<br>**4</em>3矩阵中，使用for循环好像没什么问题，但是如果这个矩阵是1000乘以1000呢？那么循环次数达到了惊人的10^6次。**<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/numpy/">numpy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/04/29/Python-操作numpy-矩阵代替for循环/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Python-使用kmeans聚类分割目标" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -224,9 +283,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Python-使用kmeans聚类分割目标"><a href="#Python-使用kmeans聚类分割目标" class="headerlink" title="Python 使用kmeans聚类分割目标"></a>Python 使用kmeans聚类分割目标</h1><p>###关于背景</p>
-<ul>
-<li>在复杂变化的背景中，识别运动目标并跟踪是一件很困难的事情。简单使用灰度阈值或HSV颜色空间阈值分割在特定环境下效果不错，但是在现实环境下（水草、淤泥）都会。</li>
+        <h1 id="Python-使用kmeans聚类分割目标"><a href="#Python-使用kmeans聚类分割目标" class="headerlink" title="Python 使用kmeans聚类分割目标"></a>Python 使用kmeans聚类分割目标</h1><h3 id="关于背景"><a href="#关于背景" class="headerlink" title="关于背景"></a>关于背景</h3><ul>
+<li>在复杂变化的背景中，识别运动目标并跟踪是一件很困难的事情。简单使用灰度阈值或HSV颜色空间阈值分割在特定环境下效果不错，但是在现实环境下（水草、淤泥变化）导致阈值的选择会非常不容易。</li>
 <li>当对象受到光影变化或者背景颜色从黑转化到白等，都会导致目标残缺。</li>
 <li>最重要的问题在于，由于使用阈值分割，不但需要手动设定阈值，不同的背景阈值差别很大，效率非常低。</li>
 <li>生成的轮廓数量会大于目标轮廓数量，需要条件检索目标轮廓，在特定情况下时，会导致目标丢失。</li>
