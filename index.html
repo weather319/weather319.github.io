@@ -196,6 +196,62 @@
 
       <div class="body-wrap">
   
+    <article id="post-Python-使用gdal变换空间坐标系统" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/11/Python-使用gdal变换空间坐标系统/" class="article-date">
+  	<time datetime="2016-05-11T12:09:08.000Z" itemprop="datePublished">2016-05-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/11/Python-使用gdal变换空间坐标系统/">Python 使用gdal变换空间坐标系统</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用CoordinateTransformation函数转化不同的坐标系统"><a href="#使用CoordinateTransformation函数转化不同的坐标系统" class="headerlink" title="使用CoordinateTransformation函数转化不同的坐标系统"></a>使用CoordinateTransformation函数转化不同的坐标系统</h1><h2 id="Gdal读取遥感图片"><a href="#Gdal读取遥感图片" class="headerlink" title="Gdal读取遥感图片"></a>Gdal读取遥感图片</h2><p>在使用GDAL库读取GeoTiff格式的遥感数据中，需要涉及到操作经纬度参数来提取图片中具体一块区域的图片。<br>读取到的一个dataset（对应GDALDataset类）是一个光栅数据以及和它有关系的信息的集合。特别地dataset包含了光栅数据的大小（像素、线等）。dataset同时也为对应的光栅数据指定了坐标系统。dataset本身还可以包含元数据，它们以一种键/值对 的方式来组织。GDAL的数据集是基于OpenGIS Grid Coverages的格式定义的。<br><strong>dataset包含的地理空间坐标系统是不同的，有的是平面空间坐标，有的是大地空间坐标（如：经纬度），所以在不同的坐标空间之间转化在有的时候是非常必要的。</strong><br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/05/11/Python-使用gdal变换空间坐标系统/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Python-存储图片到sqlite3中" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
