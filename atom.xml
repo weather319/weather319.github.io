@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weather319.github.io/"/>
-  <updated>2016-05-11T13:04:51.000Z</updated>
+  <updated>2016-05-11T13:42:39.000Z</updated>
   <id>http://weather319.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://weather319.github.io/2016/05/11/Python-%E4%BD%BF%E7%94%A8gdal%E5%8F%98%E6%8D%A2%E7%A9%BA%E9%97%B4%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F/"/>
     <id>http://weather319.github.io/2016/05/11/Python-使用gdal变换空间坐标系统/</id>
     <published>2016-05-11T12:09:08.000Z</published>
-    <updated>2016-05-11T13:04:51.000Z</updated>
+    <updated>2016-05-11T13:42:39.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;使用CoordinateTransformation函数转化不同的坐标系统&quot;&gt;&lt;a href=&quot;#使用CoordinateTransformation函数转化不同的坐标系统&quot; class=&quot;headerlink&quot; title=&quot;使用CoordinateTransformation函数转化不同的坐标系统&quot;&gt;&lt;/a&gt;使用CoordinateTransformation函数转化不同的坐标系统&lt;/h1&gt;&lt;h2 id=&quot;Gdal读取遥感图片&quot;&gt;&lt;a href=&quot;#Gdal读取遥感图片&quot; class=&quot;headerlink&quot; title=&quot;Gdal读取遥感图片&quot;&gt;&lt;/a&gt;Gdal读取遥感图片&lt;/h2&gt;&lt;p&gt;在使用GDAL库读取GeoTiff格式的遥感数据中，需要涉及到操作经纬度参数来提取图片中具体一块区域的图片。&lt;br&gt;读取到的一个dataset（对应GDALDataset类）是一个光栅数据以及和它有关系的信息的集合。特别地dataset包含了光栅数据的大小（像素、线等）。dataset同时也为对应的光栅数据指定了坐标系统。dataset本身还可以包含元数据，它们以一种键/值对 的方式来组织。GDAL的数据集是基于OpenGIS Grid Coverages的格式定义的。&lt;br&gt;&lt;strong&gt;dataset包含的地理空间坐标系统是不同的，有的是平面空间坐标，有的是大地空间坐标（如：经纬度），所以在不同的坐标空间之间转化在有的时候是非常必要的。&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Dataset的坐标系统由OpenGIS-WKT字符串定义，它包含了：&quot;&gt;&lt;a href=&quot;#Dataset的坐标系统由OpenGIS-WKT字符串定义，它包含了：&quot; class=&quot;headerlink&quot; title=&quot;Dataset的坐标系统由OpenGIS WKT字符串定义，它包含了：&quot;&gt;&lt;/a&gt;Dataset的坐标系统由OpenGIS WKT字符串定义，它包含了：&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;1. 一个全局的坐标系名称。 
@@ -54,6 +54,10 @@
     
     </summary>
     
+    
+      <category term="python" scheme="http://weather319.github.io/tags/python/"/>
+    
+      <category term="gdal" scheme="http://weather319.github.io/tags/gdal/"/>
     
   </entry>
   
